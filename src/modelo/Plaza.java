@@ -19,4 +19,16 @@ public class Plaza {
         estadoPlaza = true; // Actualiza internamente el estado de la plaza
         vehiculoAparcado = vehiculo; // vehiculoAparcado = vehiculo;
     }
+
+    // Metodo para liberar un plaza cuando el vehiculo se retire
+    public Vehiculo liberar(){
+
+        // Guardamos la referencia del objeto en una nueva variable
+          Vehiculo vehiculoSaliente = vehiculoAparcado;
+          // Vaciamos la plaza
+          estadoPlaza = false;
+          vehiculoAparcado = null;
+          // Devolvemos la referencia del vehiculo al gestor
+          return vehiculoSaliente;
+    }
 }
