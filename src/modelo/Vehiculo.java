@@ -6,7 +6,7 @@ package modelo;
 // there may be many features that come into your mind
 
 
-abstract class Vehiculo    {
+public abstract class Vehiculo    {
     private String matricula;
 
     // Constructor
