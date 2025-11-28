@@ -31,4 +31,11 @@ public class Plaza {
           // Devolvemos la referencia del vehiculo al gestor
           return vehiculoSaliente;
     }
+
+    // Permiso de lectura para el metodo aparcarVehiculo dentro de gestorParking
+
+    public boolean estaOcupada(){
+        // Devuelve el valor de forma publica al gestor
+        return estadoPlaza;
+    }
 }
