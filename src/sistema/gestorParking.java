@@ -31,6 +31,23 @@ public class gestorParking {
         }
         return false;
     }
+
+    public Vehiculo retirarVehiculo(String matricula){
+        for(Plaza plaza : plazas){
+            if(plaza.estaOcupada()){
+                // Obtenemos el vehiculo aparcado
+                Vehiculo vehiculoActual = plaza.getVehiculoAparcado();
+                //Comparamos la matricula
+                if(vehiculoActual.getMatricula().equals(matricula)){
+                    // En caso true, liberamos la plaza devolviendo el vehiculo
+                    return plaza.liberar();
+                }
+            }
+
+        }
+        return null;
+
+    }
 }
 
 

@@ -38,4 +38,9 @@ public class Plaza {
         // Devuelve el valor de forma publica al gestor
         return estadoPlaza;
     }
+
+    // Permiso de lectura (getter) para devolver el vehiculo aparcado
+    public Vehiculo getVehiculoAparcado(){
+        return vehiculoAparcado;
+    }
 }
