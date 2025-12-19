@@ -48,6 +48,16 @@ public class gestorParking {
         return null;
 
     }
+
+    public void mostrarEstado(){
+        for(Plaza plaza:plazas){
+            if(plaza.estaOcupada()){
+                System.out.println("Plaza "+ plaza.getNumeroPlaza() + ": OCUPADA");
+            }else{
+                System.out.println("Plaza "+ plaza.getNumeroPlaza() + ": LIBRE");
+            }
+        }
+    }
 }
 
 
