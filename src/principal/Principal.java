@@ -1,4 +1,7 @@
-package pricipal;
+package principal;
+import modelo.Coche;
+import modelo.Moto;
+import modelo.Vehiculo;
 import sistema.gestorParking;
 import java.util.Scanner;
 
