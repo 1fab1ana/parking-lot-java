@@ -43,4 +43,10 @@ public class Plaza {
     public Vehiculo getVehiculoAparcado(){
         return vehiculoAparcado;
     }
+
+    //Obtención de número de plaza
+    public int getNumeroPlaza(){
+        return numeroPlaza;
+    }
+
 }
