@@ -12,7 +12,7 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
 
         // Inicializamos el gestor
-        gestorParking gestor = new gestorParking(); // Tipo de objeto, nombre de la variable. ejecuta el constructor
+        gestorParking gestor = new gestorParking(); // Tipo de objeto, nombre de la variable, ejecuta el constructor
 
         // Variable de control para salir del bucle
         boolean salir = false;
